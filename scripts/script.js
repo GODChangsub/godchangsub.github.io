@@ -49,7 +49,9 @@ function openJokbo() {
 }
 
 function openCreatorLink() {
-  // 새 창을 열고 유튜브 링크를 엽니다.
-  const youtubeLink = 'https://youtube.com/embed/PWOwNHOJHyA?si=Vq8C1Am-2ZrcCAoa'; // 여기에 유튜브 링크를 입력하세요
-  window.open(youtubeLink, '_blank');
+  // 새 창을 열고 이미지를 표시합니다.
+  const imageUrl = 'image/ligero.png'; // 여기에 제작자 이미지의 URL을 입력하세요
+  const newWindow = window.open('', '_blank');
+  newWindow.document.write(`<img src="${imageUrl}" alt="리게로">`);
+
 }
